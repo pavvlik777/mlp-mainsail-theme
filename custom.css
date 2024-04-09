@@ -1,0 +1,21 @@
+/*
+This is a MLP dark theme for mainsail.
+
+MLP COLOR PALETTE
+    Yellow:      #e5ff0d;
+    Orange:      #ff720d;
+*/
+
+:root {
+    --SidebarPrimary:     #e5ff0d;
+    --SidebarSecondary:   #ff720d;
+}
+
+
+/* Change color for sidebar */
+.theme--dark.v-list-item.v-list-item--active:not(.v-list-item--disabled) {
+    color: var(--SidebarPrimary) !important;
+}
+.theme--dark.v-list-item:not(.v-list-item--active):not(.v-list-item--disabled) {
+    color: var(--SidebarSecondary) !important;
+}
